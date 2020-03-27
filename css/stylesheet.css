@@ -6,6 +6,10 @@ html{
 	font-family: Pacifico;
 	src:url("../fonts/Pacifico.ttf");
 }
+@font-face{
+	font-family: OpenSans-Light;
+	src:url("../fonts/open-sans/OpenSans-Light.ttf");
+}
 
 body{
 	margin: 0;
@@ -37,7 +41,7 @@ body{
 	box-sizing: border-box;
 	margin: 0;
 	width: 98.7vw;
-	background: linear-gradient(#12ffff 0%, #cdff12 100%);;
+	background: linear-gradient(#12ffff 0%, #cdff12 100%);
 	position: absolute;
 	z-index: -1;
 }
@@ -123,8 +127,11 @@ body{
 	border-left: 2px solid #fff;
 }
 .navbar-inverse .navbar-nav>li>a {
+
+	box-sizing: border-box;
     color: #fff;
     padding: 5px 10px;
+ 
 }
 .navbar-inverse .navbar-nav>li>a:first-child{
 }
@@ -202,7 +209,7 @@ body{
 }
 
 .main-msg>span{
-	font-family: sans-serif;
+	font-family: OpenSans-Light, sans-serif;
 	font-weight: bold;
 	font-size: 2em;
 	color: #EF476F;
@@ -212,9 +219,15 @@ body{
 	font-size:1.8em;
 }
 .main-msg>p{
-	font-family: OpenSans-Light, sans-serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
+	font-family: sans-serif;
 	text-align: justify;
+}
+.main-msg>p>span{
+	font-size: 1.1em;
+	font-family: Pacifico;
+	text-align: justify;
+	float: right;
 }
 hr{
 	border: solid 1px #a3a3a3;
@@ -277,7 +290,8 @@ hr{
 }
 .footerHead>.contact{
 	font-size: 1.4rem;
-	font-family: sans-serif;
+	font-family: OpenSans-Light, sans-serif;
+	font-weight: bold;
 	color: #fff;
 	padding: 6px 40px;
 	border-right: 2px solid #a3a3a3;
@@ -298,7 +312,7 @@ hr{
 	margin-right: 20px;
 	font-size: 1.5em;
 }
-.fas:hover, .far:hover{
+.contact_sub>.fas:hover, .contact_sub>.far:hover{
 	color: #00ffff;
 	cursor: pointer;
 }
@@ -309,7 +323,8 @@ hr{
 }
 .sublinks{
 	font-size: 1.4rem;
-	font-family: sans-serif;
+	font-family: OpenSans-Light,sans-serif;
+	font-weight: bold;
 	color: #fff;
 	padding: 5px 40px;
 	border-right: 2px solid #a3a3a3;

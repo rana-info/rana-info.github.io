@@ -19,6 +19,15 @@
 		<div id="bg-3"></div>
 		<div id="bg-4"></div>
 		<div id="bg-5"></div>
+
+		<div class="popup" id="popupID">
+			<div class="inner">
+				<a href="#">
+					<img src="https://media.giphy.com/media/Qv5C8L3dyOmwuz3LPe/giphy.gif">
+				</a>
+			</div>
+			<span onclick="closePopup()">&#10006</span>
+		</div>
 		
 		<div class="main-body">
 			<div class="header">
@@ -31,7 +40,7 @@
 				<nav class="navbar navbar-inverse" id="navbarID">
   					<div class="container-fluid">
     					<ul class="nav navbar-nav">
-      						<li class="active-link"><a href="#">Home</a></li>
+      						<li><a href="#">Home</a></li>
       						<li class="dropdown">
         						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Introduction
         						<span class="caret"></span></a>
@@ -78,21 +87,104 @@
 
 			<div class="body-content" id="bodyID">
 				<div class="msg">
-					<span>Application Form</span>
+					<span>Addimission Form</span>
 				</div>
-				<form class="form-horizontal" action="/action_page.php">
+				<form class="form-horizontal" action="/actionPage.html">
   					<div class="form-group">
-    					<label class="control-label col-sm-2 col-xs-2" for="email">Email:</label>
-    					<div class="col-sm-8 col-xs-9">
-      						<input type="email" class="form-control" id="email" placeholder="Enter email">
+    					<label class="control-label col-sm-3 col-xs-3" for="name"><span>*</span> Name :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="name" class="form-control" id="name" required placeholder="Enter Name">
     					</div>
   					</div>
+
   					<div class="form-group">
-    					<label class="control-label col-sm-2 col-xs-2" for="pwd">Password:</label>
-    					<div class="col-sm-8 col-xs-9">
-      						<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    					<label class="control-label col-sm-3 col-xs-3" for="Fathersname"><span>*</span> Father's Name :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="name" class="form-control" id="Fathersname" required placeholder="Enter Your Father's Name">
     					</div>
   					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="Mothersname"><span>*</span> Mother's Name :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="name" class="form-control" id="Mothersname" required placeholder="Enter Your Mother's Name">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="category"><span>*</span> Category :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="text" class="form-control" id="category" required placeholder="Enter Category">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="address1"><span>*</span> Address Line 1 :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="text" class="form-control" size="100" id="address1" required placeholder="Enter Address Line 1">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="address">Address Line 2 :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="text" class="form-control" size="100" id="address2" placeholder="Enter Address Line 2">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="address3">Address Line 3 :</label>
+    					<div class="col-sm-7 col-xs-8">
+      						<input type="text" class="form-control" size="100" id="address3" placeholder="Enter Address Line 3">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="mobile"><span>*</span> Mobile No. :</label>
+    					<div class="col-sm-3 col-xs-4">
+      						<input type="tel" pattern="[0-9]{10}" class="form-control" id="mobile" required placeholder="Enter Mobile Number" title="Invalid Mobile Number">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="altmobile">Alt. Mobile No. :</label>
+    					<div class="col-sm-3 col-xs-4">
+      						<input type="tel" pattern="[0-9]{10}" class="form-control" id="altmobile" placeholder="Enter Alternate Mobile Number" title="Invalid Mobile Number">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="pincode"><span>*</span> Pincode :</label>
+    					<div class="col-sm-2 col-xs-3">
+      						<input type="tel" class="form-control" id="pincode" required placeholder="Enter Pincode">
+    					</div>
+  					</div>
+
+  					<div class="form-group">
+    					<label class="control-label col-sm-3 col-xs-3" for="const"><span>*</span> Constituency :</label>
+    					<div class="col-sm-2 col-xs-3">
+      						<input type="text" class="form-control" id="const" required placeholder="Enter Constituency">
+    					</div>
+  					</div>
+  					<br>
+  					<fieldset> 
+  						<legend> Education Details </legend>
+
+  						<div class="form-group">
+    						<label class="control-label col-sm-4 col-xs-4" for="qual"><span>*</span> Qualification :</label>
+    						<div class="col-sm-5 col-xs-6">
+      							<input type="text" class="form-control" size="100" id="qual" required placeholder="Enter Qualification">
+    						</div>
+  						</div>
+
+  						<div class="form-group">
+    						<label class="control-label col-sm-4 col-xs-3" for="pYear"><span>*</span> Passing Year :</label>
+    						<div class="col-sm-5 col-xs-8">
+      							<input type="text" class="form-control" size="100" id="pYear" required placeholder="Enter Passing Year">
+    						</div>
+  						</div>
+  					</fieldset>
+
   					<div class="form-group">
     					<div class="col-sm-offset-2 col-sm-8">
       						<button type="submit" class="btn btn-default">Submit</button>
