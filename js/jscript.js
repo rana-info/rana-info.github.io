@@ -1,12 +1,8 @@
-var link = ["heart_beat.jpg", "space.jpg", "slab.jpg"];
 var i = 0;
-var time = 3000;
-var iter = 1;
 var k = 0;
+var btime = 3000;
 
-var j = 0;
-var btime = 100;
-window.onload = () => {
+window.onload = function(){
 	var eleImg = document.getElementById("logoID");
 	var eleNav = document.getElementById("navbarID");
 	var eleBody = document.getElementById("bodyID");
@@ -38,35 +34,41 @@ window.onload = () => {
 
 function changeImg(){
 	var ele0 = document.getElementById("slideImg");
+	var eleDot = document.getElementsByClassName("dot");
 	
-	if(k == 2){
-		k = -1;
+	if(k == 12){
+		k = 0;
 	}
-	
-	if((iter % 20) == 0){
-		iter = 0;
-		ele0.src = "imgs/" + link[++k]; 
-	}
+	ele0.src = "imgs/" + (++k) + ".jpg"; 
 
-	iter += 1;
+	for (i = 0; i < eleDot.length; i++) {
+      eleDot[i].className = eleDot[i].className.replace(" active", "");
+  	}
+	eleDot[k-1].className += " active";
 
 	setTimeout("changeImg()", btime);	
 }
 
 function nextImage(){
 	var ele = document.getElementById("slideImg");
-	if(i == 2){
-		i = -1;
+	if(k == 12){
+		k = -1;
 	}
-	ele.src = "imgs/" + link[++i];
+	ele.src = "imgs/" + (++k) + ".jpg";
 }
 
 function prevImage(){
 	var ele = document.getElementById("slideImg");
-	if(i == 0){
-		i = 3;
+
+	if(k == 0){
+		k = 13;
 	}
-	ele.src = "imgs/" + link[--i];
+
+	ele.src = "imgs/" + (--k) + ".jpg";
+}
+function currentSlide(imgId){
+	var ele = document.getElementById("slideImg");
+	ele.src = "imgs/" + imgId + ".jpg";
 }
 function closePopup(){
 	var elePopup = document.getElementById("popupID");

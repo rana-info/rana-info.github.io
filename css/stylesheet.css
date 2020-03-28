@@ -154,28 +154,50 @@ body{
 	margin: auto;
 	background: rgb(241, 245, 248);
 }
-.prev{
+.prev, .next{
 	display: inline-block;
-	font-size: 2em;
+	font-size: 28px;
 	cursor: pointer;
-	color: #041771;
+	color: #fff;
+	position: relative;
+	left: 50px;
+	transition: 0.6s ease;
+	border-radius: 0 10px 10px 0;
+	padding: 16px;
 }
 .next{
-	display: inline-block;
-	font-size: 2em;
-	cursor: pointer;
-	color: #041771;
+	left: -50px;
+	border-radius: 10px 0 0 10px;
 }
-.prev>i{
-	padding: 0;
-	margin: 0;
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 #slideImg{
 	margin-top: 20px;
-	width: 70%;
+	width: 630px;
 	height: 400px;
 	margin: 2% auto;
 	border-radius: 10px;
+}
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #f1f5f8;
+  border-radius: 50%;
+  border: 1px solid #717171;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.outerDot{
+	margin-bottom: 40px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+  border: 6px solid #717171;
 }
 
 .outer-msg{
@@ -265,9 +287,19 @@ hr{
 .main-msg.multiple>ul>li>a{
 	text-decoration: none;
 }
-
+.applynow>a>p{
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 140px;
+	font-weight: bold;
+	font-family: OpenSans-Bold;
+	display: inline-block;
+}
 .applynow{
-	padding-top: 35px;
+	padding-top: 5px;
+}
+.applynow>a:hover{
+	color: #EF476F;
 }
 .main-msg.multiple>a>img{
 	width: 360px;
