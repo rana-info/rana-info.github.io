@@ -234,8 +234,9 @@ body{
 }
 
 .msg>img{
-	width: 20%;
-	flex: 1;
+	width: 180px;
+	height: 180px;
+	flex: 0 1 auto;
 	position: relative;
 	border-radius: 300px;
 }
