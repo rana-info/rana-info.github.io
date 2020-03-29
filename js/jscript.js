@@ -18,7 +18,6 @@ window.onload = function(){
 	var creditsTop = eleImg.offsetHeight + 2 + eleNav.offsetHeight + 2 + eleBody.offsetHeight + eleFooter.offsetHeight + 'px';
 	var creditsHeight = eleCredits.offsetHeight + 'px';
 
-	
 	document.getElementById("bg-1").style.height = imgHeight;
 	document.getElementById("bg-2").style.top = imgHeight;
 	document.getElementById("bg-2").style.height = navHeight;
@@ -28,6 +27,8 @@ window.onload = function(){
 	document.getElementById("bg-4").style.height = footerHeight;
 	document.getElementById("bg-5").style.top = creditsTop;
 	document.getElementById("bg-5").style.height = creditsHeight;
+
+	eleBody.style.minHeight = window.innerHeight - eleImg.offsetHeight - eleNav.offsetHeight - eleFooter.offsetHeight - eleCredits.offsetHeight + 'px';
 	setTimeout(2000, changeImg());
 }
 

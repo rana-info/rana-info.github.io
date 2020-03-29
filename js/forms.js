@@ -24,4 +24,6 @@ window.onload = () => {
 	document.getElementById("bg-4").style.height = footerHeight;
 	document.getElementById("bg-5").style.top = creditsTop;
 	document.getElementById("bg-5").style.height = creditsHeight;
+
+	eleBody.style.minHeight = window.innerHeight - eleImg.offsetHeight - eleNav.offsetHeight - eleFooter.offsetHeight - eleCredits.offsetHeight + 'px';
 }

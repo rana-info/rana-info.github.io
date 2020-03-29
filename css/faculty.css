@@ -14,10 +14,6 @@ html{
 	font-family: OpenSans-Bold;
 	src:url("../fonts/open-sans/OpenSans-Bold.ttf");
 }
-@font-face{
-	font-family: OpenSans-Semibold;
-	src:url("../fonts/open-sans/OpenSans-Semibold.ttf");
-}
 
 body{
 	margin: 0;
@@ -50,7 +46,8 @@ body{
 #bg-3{
 	box-sizing: border-box;
 	margin: 0;
-	width: 98.7vw;
+	width: 100vw;
+	max-width: 100%;
 	background: linear-gradient(#12ffff 0%, #cdff12 100%);
 	position: absolute;
 	z-index: -1;
@@ -103,7 +100,7 @@ body{
 	cursor: pointer;
 }
 .main-body{
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 }
 .logo{
@@ -114,7 +111,7 @@ body{
 }
 
 .navigation-body{
-	width: 900px;
+	width: 1000px;
 }
 .navbar-inverse{
 	background: #041771;
@@ -123,7 +120,7 @@ body{
 	text-transform: uppercase;
 	font-family: OpenSans-Bold;
 	font-weight: bold;
-	font-size: 1.0755rem;
+	font-size: 1.23rem;
 }
 .container-fluid{
 	margin: auto;
@@ -142,7 +139,7 @@ body{
 
 	box-sizing: border-box;
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px 13.3px;
  
 }
 .dropdown-menu>li{
@@ -157,7 +154,7 @@ body{
 	color: #000;
 }
 .body-content{
-	width: 900px;
+	width: 1000px;
 	padding-bottom: 20px;
 	margin: auto;
 	background: rgb(241, 245, 248);
@@ -274,8 +271,6 @@ p.subhead{
 	width: 900px;
 	background: rgb(23, 18, 40);
 	padding: 2%;
-	position: relative;
-	bottom: 0;
 }
 
 .footer>.top{
