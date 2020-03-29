@@ -14,6 +14,10 @@ html{
 	font-family: OpenSans-Bold;
 	src:url("../fonts/open-sans/OpenSans-Bold.ttf");
 }
+@font-face{
+	font-family: OpenSans-Semibold;
+	src:url("../fonts/open-sans/OpenSans-Semibold.ttf");
+}
 
 body{
 	margin: 0;
@@ -138,7 +142,7 @@ body{
 
 	box-sizing: border-box;
     color: #fff;
-    padding: 5px 12.6px;
+    padding: 5px 10px;
  
 }
 .dropdown-menu>li{
@@ -216,113 +220,53 @@ body{
 	border-radius: 15px;
 	margin-bottom: 0;
 }
-.msg{
-	text-align: left;
-	margin: auto;
-	display: flex;
-	padding: 0 50px;
-	margin-bottom: 4%;
-}
-.msg:last-child{
-	margin-bottom: 2%;
-	margin-top: 4%;
-}
-
-.msg>img{
-	width: 20%;
-	flex: 1;
-	position: relative;
-	border-radius: 300px;
-}
-.multiple>img{
-	border-radius: 10px;
-}
-.main-msg{
-	flex: 2;
-	font-family: sans-serif;
-	padding:  7px 20px;
-}
-
-.main-msg>span{
-	font-family: OpenSans-Light, sans-serif;
-	font-weight: bold;
-	font-size: 2em;
+.outer-msg>p{
+	text-align: center;
+	font-size: 2.5em;
+	font-family: OpenSans-Semibold;
 	color: #EF476F;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
 
+table{
+	width: 800px !important;
+	margin: 0 auto;
+	margin-bottom: 50px !important;
 }
-.multiple>span{
-	font-size:1.8em;
+td, th{
+	text-align: left;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+	font-family: OpenSans-Light !important;
+	font-weight: bold;
+	cursor: pointer;
 }
-.main-msg>p{
-	font-size: 1.1em;
-	font-family: sans-serif;
-	text-align: justify;
+tr:nth-child(even){
+	background: #fff0f0;
 }
-.main-msg>p>span{
-	font-size: 1.1em;
-	font-family: Pacifico;
-	text-align: justify;
-	float: right;
+tr:nth-child(odd){
+	background: #f0ffff;
+}
+tr:hover{
+	background: #f0f0ff;
+}
+tr:first-child{
+	background: #343a40;
+}
+th{
+	color: #fff;
 }
 hr{
 	border: solid 1px #a3a3a3;
-	width: 600px;
+	width: 700px;
 	margin-bottom: 4%;
-}
-
-.msg.multiple{
-	padding: 0 10px;
-}
-.main-msg.multiple{
-	padding-right: 20px;
-	border-right: 2px solid #a3a3a3;
-	margin-right: 3%;
-}
-.main-msg.multiple:last-child{
-	border-right: 0;
-	padding-right: 0;
-	margin-right: 0;
-}
-.msg.multiple{
-	margin-right: 0;
-}
-.main-msg.multiple>ul>li{
-	font-size: 1.2em;
-}
-.main-msg.multiple>ul{
-	padding-left: 30px;
-}
-.main-msg.multiple>ul>li>a{
-	text-decoration: none;
-}
-.applynow>a>p{
-	text-decoration: none;
-	font-size: 15px;
-	margin-left: 140px;
-	font-weight: bold;
-	font-family: OpenSans-Bold;
-	display: inline-block;
-}
-.applynow{
-	padding-top: 5px;
-}
-.applynow>a:hover{
-	color: #EF476F;
-}
-.main-msg.multiple>a>img{
-	width: 360px;
-}
-.main-msg.multiple>p{
-	margin-top: 0px;
-	padding-left: 25%;
 }
 
 .footer{
 	width: 900px;
 	background: rgb(23, 18, 40);
 	padding: 2%;
-	position: relative;
-	bottom: 0;
 }
 
 .footer>.top{
