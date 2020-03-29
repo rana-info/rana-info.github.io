@@ -230,7 +230,7 @@ body{
 	margin-bottom: 30px;
 }
 table{
-	width: 650px !important;
+	width: 660px !important;
 	margin: 0 auto;
 	margin-bottom: 50px !important;
 }
@@ -257,7 +257,9 @@ hr{
 	width: 700px;
 	margin-bottom: 4%;
 }
-
+td.bold{
+	font-family: OpenSans-Bold !important;
+}
 .footer{
 	width: 900px;
 	background: rgb(23, 18, 40);
