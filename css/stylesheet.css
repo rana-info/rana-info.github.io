@@ -274,19 +274,20 @@ hr{
 .applynow>a>p{
 	text-decoration: none;
 	font-size: 15px;
-	margin-left: 140px;
-	font-weight: bold;
 	font-family: OpenSans-Bold;
-	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	margin: 0;
 }
 .applynow{
-	padding-top: 5px;
+	padding: 5px;
 }
 .applynow>a:hover{
 	color: #EF476F;
+	text-decoration: none;
 }
 .main-msg.multiple>a>img{
-	width: 360px;
+	width: 411px;
 }
 .main-msg.multiple>p{
 	margin-top: 0px;
