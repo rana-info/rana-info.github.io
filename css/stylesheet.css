@@ -293,8 +293,7 @@ hr{
 	padding-left: 25%;
 }
 .footer{
-	box-sizing: border-box;
-	min-width: 100vw;
+	width: 980px;
 	background: rgb(23, 18, 40);
 	padding: 2%;
 }

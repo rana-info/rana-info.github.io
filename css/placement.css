@@ -74,37 +74,8 @@ body{
 	position: absolute;
 	z-index: -1;
 }
-.popup{
-	position: fixed;
-	z-index: 99;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.8);
-	width: 100vw;
-	height: 100vh;
-	padding-top: 20px;
-}
-.popup>.inner{
-	margin: 0 auto;
-	position: fixed;
-	top: 25%;
-	left: 40%;
-	background: rgba(255, 255, 255, 0.4); 
-	padding: 40px;
-	border-radius: 10px;
-}
-.popup>.inner>a>img{
-	width: 200px;
-	border-radius: 10px;
-}
-.popup>span{
-	font-size: 3em;
-	margin-left: 90vw;
-	color: #EF476F;
-	cursor: pointer;
-}
 .main-body{
-	width: 1000px;
+	width: 980px;
 	margin: 0 auto;
 }
 .logo{
@@ -115,7 +86,7 @@ body{
 }
 
 .navigation-body{
-	width: 1000px;
+	width: 980px;
 }
 .navbar-inverse{
 	background: #041771;
@@ -140,10 +111,9 @@ body{
 	border-left: 2px solid #fff;
 }
 .navbar-inverse .navbar-nav>li>a {
-
 	box-sizing: border-box;
     color: #fff;
-    padding: 5px 13.3px;
+    padding: 5px 12px;
  
 }
 .dropdown-menu>li{
@@ -158,7 +128,7 @@ body{
 	color: #000;
 }
 .body-content{
-	width: 1000px;
+	width: 980px;
 	padding-bottom: 20px;
 	margin: auto;
 	background: rgb(241, 245, 248);
@@ -264,7 +234,7 @@ hr{
 	margin-bottom: 4%;
 }
 .footer{
-	width: 900px;
+	width: 980px;
 	background: rgb(23, 18, 40);
 	padding: 2%;
 }
